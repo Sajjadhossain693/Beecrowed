@@ -2,14 +2,13 @@
 #include <math.h>
 
 int main() {
-    int a,f;
-    scanf("%d", &a);
+    long long n, f=0;
+    scanf("%lld", &n);
 
-    f = (int)pow(-1, a)*a;
-    printf("%d\n", f);
+    for (long long i = 1; i <= n; i++) {
+        f += (long long)(pow(-1, i)) * i; 
+    }
+
+    printf("%lld\n", f);
     return 0;
-
-
-
 }
-
